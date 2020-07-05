@@ -1,2 +1,2 @@
 # chinook_db
-Chinook Database
+The Chinook Tutorial Database
