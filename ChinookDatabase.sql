@@ -19,3 +19,11 @@ CREATE TABLE public.event_log(
 	 FOREIGN KEY (user_id) REFERENCES user_info(id)
 );
 
+CREATE TYPE day_of_week AS ENUM ('Monday', 'Tuesday', 'Wednesday' , 'Thursday', 'Friday', 'Saturday');
+
+CREATE TABLE public.test_table (
+    student_id INT,
+	week_day day_of_week,
+	key SERIAL PRIMARY KEY
+);
+
