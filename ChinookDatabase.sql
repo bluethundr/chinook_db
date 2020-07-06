@@ -7,12 +7,12 @@
 
 CREATE TABLE public.event_info(
      id INT PRIMARY KEY,
-	 name TEXT
+     name TEXT
 );
 
 CREATE TABLE public.event_log(
      event_key SERIAL PRIMARY KEY,
-	 event_id INT,
+     event_id INT,
      user_id INT,
      time TIMESTAMP,
      FOREIGN KEY (event_id) REFERENCES event_info(id),
@@ -23,7 +23,7 @@ CREATE TYPE day_of_week AS ENUM ('Monday', 'Tuesday', 'Wednesday' , 'Thursday', 
 
 CREATE TABLE public.test_table (
     student_id INT,
-	week_day day_of_week,
-	key SERIAL PRIMARY KEY
+    week_day day_of_week,
+    key SERIAL PRIMARY KEY
 );
 
